@@ -1,0 +1,17 @@
+sudo apt update 
+sudo apt install python3 -y 
+echo “print(‘Hello World’)” > app.py 
+python3 app.p
+
+# Create an HTML file
+echo "<!DOCTYPE html>
+<html>
+<head><title>My EC2 Page</title></head>
+<body>
+<h1>Hello from AWS EC2</h1>
+<p>This is a static website using Python server.</p>
+</body>
+</html>" > index.html
+
+# Start a simple web server (on port 80)
+sudo python3 -m http.server 80
